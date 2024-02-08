@@ -106,7 +106,7 @@ export const Navbar = () => {
 
   return (
     <nav className=' bg-gray-100 dark:bg-slate-900'>
-      <div className='flex items-center justify-between flex-wrap px-4 py-4'>
+      <div className='flex items-center justify-between flex-wrap px-4 py-4 max-w-5xl mx-auto md:flex-row-reverse'>
         <Avatar>
           <AvatarImage src='/assets/avatar.jpg' />
           <AvatarFallback>CN</AvatarFallback>
@@ -114,7 +114,7 @@ export const Navbar = () => {
         <Button
           onClick={() => setIsMenuActive(!isMenuActive)}
           variant='outline'
-          className='p-2'
+          className='p-2 md:hidden'
           size='icon'>
           {isMenuActive ? (
             <svg
@@ -146,6 +146,16 @@ export const Navbar = () => {
             </svg>
           )}
         </Button>
+        <ul className='hidden md:flex gap-12'>
+          {menu.map((menuItem) => (
+            <li className='inline-block'>
+              <span>{menuItem.label}</span>
+            </li>
+          ))}
+        </ul>
+        <div className='hidden md:block'>
+          <span>Logo</span>
+        </div>
       </div>
       <div
         className={`${
