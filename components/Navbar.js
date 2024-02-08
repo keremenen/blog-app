@@ -2,6 +2,14 @@
 import { useState } from 'react'
 import { Avatar, AvatarImage, AvatarFallback } from './ui/avatar'
 import { Button } from './ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from './ui/dropdown-menu'
 
 const menu = [
   {
@@ -107,10 +115,34 @@ export const Navbar = () => {
   return (
     <nav className=' bg-gray-100 dark:bg-slate-900'>
       <div className='flex items-center justify-between flex-wrap px-4 py-4 max-w-5xl mx-auto md:flex-row-reverse'>
-        <Avatar>
-          <AvatarImage src='/assets/avatar.jpg' />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <Avatar>
+              <AvatarImage src='/assets/avatar.jpg' />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuLabel>Przemysław Kitowski</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem className='cursor-pointer'>
+              Profile
+            </DropdownMenuItem>
+            <DropdownMenuItem className='cursor-pointer'>
+              Posts
+            </DropdownMenuItem>
+            <DropdownMenuItem className='cursor-pointer'>
+              Bookmarks
+            </DropdownMenuItem>
+            <DropdownMenuItem className='cursor-pointer'>
+              Settings
+            </DropdownMenuItem>
+            <DropdownMenuItem className='cursor-pointer'>
+              Sign out
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
         <Button
           onClick={() => setIsMenuActive(!isMenuActive)}
           variant='outline'
@@ -148,7 +180,9 @@ export const Navbar = () => {
         </Button>
         <ul className='hidden md:flex gap-12'>
           {menu.map((menuItem) => (
-            <li className='inline-block'>
+            <li
+              className='inline-block'
+              key={menuItem.title}>
               <span>{menuItem.label}</span>
             </li>
           ))}
@@ -163,7 +197,7 @@ export const Navbar = () => {
         } basis-[100%] bg-gray-50 dark:bg-gray-800`}>
         <ul>
           {menu.map((menuItem) => (
-            <li>
+            <li key={menuItem.label}>
               <div className='gap-6 px-8 py-3 border-b-[1px] border-b-gray-200 flex justify-start items-center dark:border-b-gray-900'>
                 <div className='w-[40px] h-[40px] rounded-md bg-white shadow-sm flex items-center justify-center border-[1px] dark:bg-gray-900'>
                   {menuItem.icon}

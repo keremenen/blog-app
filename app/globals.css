@@ -10,9 +10,13 @@
   box-sizing: border-box;
 }
 
+button {
+  outline: none;
+}
 h3 {
   @apply font-semibold text-lg text-gray-900 leading-6;
 }
+
 @layer base {
   :root {
     --background: 0 0% 100%;
