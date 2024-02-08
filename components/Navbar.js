@@ -102,7 +102,7 @@ const menu = [
 ]
 
 export const Navbar = () => {
-  const [isMenuActive, setIsMenuActive] = useState(true)
+  const [isMenuActive, setIsMenuActive] = useState(false)
 
   return (
     <nav className=' bg-gray-100 dark:bg-slate-900'>
