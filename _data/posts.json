@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "Przemysław Kitowski",
+      "createdAt": "October 21, 2003",
+      "featuredImage": "https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "How to Create a Winning Marketing Plan for Your Startup",
+      "timeToRead": 3,
+      "content": "Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien"
+    },
+    {
+      "id": 2,
+      "author": "Przemysław Kitowski",
+      "createdAt": "October 21, 2003",
+      "featuredImage": "https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "How to Create a Winning Marketing Plan for Your Startup",
+      "timeToRead": 3,
+      "content": "Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien"
+    },
+    {
+      "id": 3,
+      "author": "Przemysław Kitowski",
+      "createdAt": "October 21, 2003",
+      "featuredImage": "https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "How to Create a Winning Marketing Plan for Your Startup",
+      "timeToRead": 3,
+      "content": "Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien"
+    },
+    {
+      "id": 4,
+      "author": "Przemysław Kitowski",
+      "createdAt": "October 21, 2003",
+      "featuredImage": "https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "title": "How to Create a Winning Marketing Plan for Your Startup",
+      "timeToRead": 3,
+      "content": "Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien"
+    }
+  ]
+}
