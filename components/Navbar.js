@@ -167,22 +167,22 @@ export const Navbar = () => {
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
               viewBox='0 0 24 24'
-              stroke-width='1.5'
+              strokeWidth='1.5'
               stroke='currentColor'
-              class='w-40 h-40'>
+              className='w-40 h-40'>
               <path
-                stroke-linecap='round'
-                stroke-linejoin='round'
+                strokeLinecap='round'
+                strokeLinejoin='round'
                 d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
               />
             </svg>
           )}
         </Button>
         <ul className='hidden md:flex gap-12'>
-          {menu.map((menuItem) => (
+          {menu.map((menuItem, index) => (
             <li
               className='inline-block'
-              key={menuItem.title}>
+              key={index}>
               <span>{menuItem.label}</span>
             </li>
           ))}
@@ -196,8 +196,8 @@ export const Navbar = () => {
           isMenuActive ? 'block' : 'hidden'
         } basis-[100%] bg-gray-50 dark:bg-gray-800`}>
         <ul>
-          {menu.map((menuItem) => (
-            <li key={menuItem.label}>
+          {menu.map((menuItem, index) => (
+            <li key={index}>
               <div className='gap-6 px-8 py-3 border-b-[1px] border-b-gray-200 flex justify-start items-center dark:border-b-gray-900'>
                 <div className='w-[40px] h-[40px] rounded-md bg-white shadow-sm flex items-center justify-center border-[1px] dark:bg-gray-900'>
                   {menuItem.icon}
