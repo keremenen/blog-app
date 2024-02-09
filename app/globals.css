@@ -16,6 +16,9 @@ button {
 h1 {
   @apply text-base justify-start px-4 font-semibold tracking-tight flex-wrap text-slate-900 md:text-xl;
 }
+h2 {
+  @apply my-5 overflow-hidden text-xl font-semibold leading-6 text-gray-900;
+}
 h3 {
   @apply font-semibold text-lg text-gray-900 leading-6;
 }
