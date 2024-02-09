@@ -1,43 +1,43 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "author": "Przemysław Kitowski",
       "createdAt": "October 21, 2003",
       "category": "Marketing",
       "featuredImage": "https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "title": "How to Create a Winning Marketing Plan for Your Startup",
-      "timeToRead": 3,
+      "timeToRead": "3",
       "content": "Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien"
     },
     {
-      "id": 2,
+      "id": "2",
       "author": "Przemysław Kitowski",
       "createdAt": "October 21, 2003",
       "category": "Science",
       "featuredImage": "https://www.ub.cafe/_next/image?url=https%3A%2F%2Fiskzuogcmkzumadqjnbv.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fposts%2F60eee032-f6f9-4e7f-9cb8-0fe2d362e68e%2Fcover-photo.jpg&w=640&q=75",
       "title": "Proven Marketing Tactics to Boost Your Business",
-      "timeToRead": 4,
+      "timeToRead": "4",
       "content": "Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id"
     },
     {
-      "id": 3,
+      "id": "3",
       "author": "Przemysław Kitowski",
       "createdAt": "October 21, 2003",
       "category": "Helth",
       "featuredImage": "https://www.ub.cafe/_next/image?url=https%3A%2F%2Fiskzuogcmkzumadqjnbv.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fposts%2F2965acbd-28c3-417f-9c50-07886d2e7fbe%2Fcover-photo.jpg&w=640&q=75",
       "title": "How to use search engine optimization",
-      "timeToRead": 6,
+      "timeToRead": "6",
       "content": "Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci."
     },
     {
-      "id": 4,
+      "id": "4",
       "author": "Przemysław Kitowski",
       "createdAt": "October 21, 2003",
       "category": "Marketing",
       "featuredImage": "https://www.ub.cafe/_next/image?url=https%3A%2F%2Fiskzuogcmkzumadqjnbv.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fposts%2F16743acc-4998-4ff9-ae35-a216888ce40b%2Fcover-photo.jpg&w=640&q=75",
       "title": "JavaScript for Beginners",
-      "timeToRead": 2,
+      "timeToRead": "3",
       "content": "Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam."
     }
   ]
