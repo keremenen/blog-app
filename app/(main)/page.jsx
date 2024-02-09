@@ -1,4 +1,5 @@
 import MainPostItem from '@/components/Main-post-item'
+import Navbar from '@/components/Navbar'
 
 const getBlogPosts = async () => {
   try {
@@ -14,8 +15,11 @@ const getBlogPosts = async () => {
 export default async function Home() {
   const posts = await getBlogPosts()
   return (
-    <main className='container mx-auto max-w-3xl mt-4'>
-      <MainPostItem posts={posts} />
-    </main>
+    <>
+      <Navbar />
+      <main className='container mx-auto max-w-3xl mt-4'>
+        <MainPostItem posts={posts} />
+      </main>
+    </>
   )
 }

@@ -1,3 +1,4 @@
+import PostNavbar from '@/components/PostNavbar'
 import { notFound } from 'next/navigation'
 import React from 'react'
 
@@ -17,7 +18,14 @@ const getSinglePostData = async (id) => {
 
 export const PostPage = async ({ params: { id } }) => {
   const { title } = await getSinglePostData(id)
-  return <div>Post: {title}</div>
+  return (
+    <>
+      <PostNavbar title={title} />
+      <main className='container mx-auto max-w-3xl mt-4'>
+        <div>Post: {title}</div>
+      </main>
+    </>
+  )
 }
 
 export default PostPage

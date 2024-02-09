@@ -13,6 +13,9 @@
 button {
   outline: none;
 }
+h1 {
+  @apply text-base justify-start px-4 font-semibold tracking-tight flex-wrap text-slate-900 md:text-xl;
+}
 h3 {
   @apply font-semibold text-lg text-gray-900 leading-6;
 }
