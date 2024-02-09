@@ -3,24 +3,25 @@ import { Badge } from '@/components/ui/badge'
 import { Separator } from '@/components/ui/separator'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
-const MainPostItem = () => {
-  return (
+const MainPostItem = ({ posts }) => {
+  return posts.map((post) => (
     <div className='p-2 border-[1px] border-gray-300 rounded-2xl'>
       <div className='bg-white p-5 rounded-lg border-[1px] border-gray-300'>
         <div className='aspect-video relative'>
           <Image
-            src='/assets/background.jpeg'
+            src={post.featuredImage}
             alt='Post image'
             fill
             className='object-cover rounded-2xl'
           />
         </div>
+
         <div className='mt-4'>
-          <h3>How to Create a Winning Marketing Plan for Your Startup</h3>
+          <h3>{post.title}</h3>
         </div>
 
         <div className='flex text-gray-500 my-3 gap-2 items-center'>
-          <Badge variant='secondary'>Marketing</Badge>
+          <Badge variant='secondary'>{post.category}</Badge>
           <div className='flex items-center text-sm gap-1'>
             <div className='h-[18px] w-[18px]'>
               <svg
@@ -37,7 +38,7 @@ const MainPostItem = () => {
                 />
               </svg>
             </div>
-            <span>20/10/2023</span>
+            <span>{post.createdAt}</span>
           </div>
           <div className='flex items-center text-sm gap-1'>
             <div className='h-[18px] w-[18px]'>
@@ -55,15 +56,12 @@ const MainPostItem = () => {
                 />
               </svg>
             </div>
-            <span>3 min</span>
+            <span>{`${post.timeToRead} min`}</span>
           </div>
         </div>
 
         <p className='text-sm text-gray-600 leading-6'>
-          Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At
-          arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae
-          feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget.
-          Eleifend egestas fringilla sapien...
+          {post.content.substring(0, 200)}
         </p>
         <Separator className='mt-4 mb-2' />
         <div className='flex items-center gap-2'>
@@ -78,7 +76,7 @@ const MainPostItem = () => {
         </div>
       </div>
     </div>
-  )
+  ))
 }
 
 export default MainPostItem

@@ -1,9 +1,21 @@
 import MainPostItem from '@/components/Main-post-item'
 
-export default function Home() {
+const getBlogPosts = async () => {
+  try {
+    const res = await fetch('http://localhost:4000/posts', {
+      next: { revalidate: 0 },
+    })
+    return res.json()
+  } catch (error) {
+    throw new Error('failed to fetch data')
+  }
+}
+
+export default async function Home() {
+  const posts = await getBlogPosts()
   return (
     <main className='container mx-auto max-w-3xl mt-4'>
-      <MainPostItem />
+      <MainPostItem posts={posts} />
     </main>
   )
 }
